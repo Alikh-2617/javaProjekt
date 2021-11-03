@@ -5,3 +5,4 @@ public class Male extends Person {
         super(needCalories);
     }
 }
+

@@ -4,8 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Male man = new Male(2000 );
-        Woman woman = new Woman(2500 );
+        Person man = new Male(2000 );
+        Person woman = new Woman(2500 );
+        Woman woman1 = new Woman(2500 , "Blue");
+
 
         Food broccoli = new Broccoli();
         Food slicePizza = new Pizza();
@@ -29,6 +31,7 @@ public class Main {
         woman.eat(slicePizza);
         woman.eat(slicePizza);
         woman.eat(slicePizza);
+        woman1.setColor("ble");                                      //bara woman1 kan har funktion get/set color !! inte i person class
 
 
 
@@ -38,7 +41,6 @@ public class Main {
         System.out.print("Calories Got in the day ==>  ");
         man.printCalories();
         System.out.println("person is Saturation? ==> "+man.isMeet());
-
         man.sport(run ,10);
         man.sport(walking , 5);
         man.sport(swimming,5);
@@ -57,6 +59,8 @@ public class Main {
         woman.sport(run,5);
         woman.sport(walking,2 );
     //    woman.sport(swimming , 2 );
+
+        System.out.println(woman1.getColor());                   //Bara woman1 kan har getColor funktion !!
 
         System.out.print("After Sporting ==> ");
         woman.printCalories();

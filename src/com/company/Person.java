@@ -10,6 +10,9 @@ public class Person {
         this.needCalories = needCalories;
 
     }
+    public void printColor (String color ){
+        System.out.println(color);
+    }
 
     public boolean isMeet(){
         return  currentCalories >= needCalories;
