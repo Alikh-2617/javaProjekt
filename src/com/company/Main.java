@@ -18,8 +18,8 @@ public class Main {
 
         man.eat(slicePizza);
         man.eat(sandwich);
-        man.eat(sandwich);
-        man.eat(broccoli);
+//        man.eat(sandwich);
+//        man.eat(broccoli);
 
 
 
@@ -36,25 +36,26 @@ public class Main {
 
 
 
-        System.out.print("Calories status for Man in day ==>  ");
+        System.out.print("Calories status for a Man in day ==>  ");
         man.printGetCalories();
-        System.out.print("Calories Got in the day ==>  ");
+        System.out.print("Calories Got ==>  ");
         man.printCalories();
-        System.out.println("person is Saturation? ==> "+man.isMeet());
+        System.out.println("person is food ==> "+man.isMeet());
         man.sport(run ,10);
         man.sport(walking , 5);
         man.sport(swimming,5);
 
-        System.out.print("After Sporting ==> ");
+        System.out.print("Calories after Sporting ==> ");
         man.printCalories();
-        System.out.println("person is Saturation? ==> "+man.isMeet());
+        System.out.println("person is food ==> "+man.isMeet());
+        System.out.println("person eating enough before sporting ==> "+man.equals(man));
 
         System.out.println("------------------------------------------");
-        System.out.print("Calories status for Woman in day ==> ");
+        System.out.print("Calories status for a Woman in day ==> ");
         woman.printGetCalories();
-        System.out.print("Calories Got in the day ==>  ");
+        System.out.print("Calories got ==>  ");
         woman.printCalories();
-        System.out.println("person is Saturation? => " + woman.isMeet());
+        System.out.println("person is food ==> " + woman.isMeet());
 
         woman.sport(run,5);
         woman.sport(walking,2 );
@@ -62,9 +63,10 @@ public class Main {
 
         System.out.println(woman1.getColor());                   //Bara woman1 kan har getColor funktion !!
 
-        System.out.print("After Sporting ==> ");
+        System.out.print("Calories after Sporting ==> ");
         woman.printCalories();
-        System.out.println("person is Saturation? => "+ woman.isMeet());
+        System.out.println("person is food ==> "+ woman.isMeet());
+        System.out.println("person eating enough before sporting ==> "+woman.equals(woman));
 
 
     }

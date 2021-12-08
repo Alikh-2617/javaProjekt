@@ -10,6 +10,7 @@ public class Person {
         this.needCalories = needCalories;
 
     }
+
     public void printColor (String color ){
         System.out.println(color);
     }
@@ -30,13 +31,9 @@ public class Person {
         System.out.println(currentCalories );
     }
 
-    public boolean equals (Person i ){
-        if (i.needCalories == this.needCalories ){
-            return true ;
-        }
-        else {
-            return false;
-        }
 
+    public boolean equals (Person i ){
+        if (i.needCalories == this.needCalories ){ return true ; }
+        else { return false; }
     }
 }

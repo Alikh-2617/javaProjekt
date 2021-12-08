@@ -6,6 +6,7 @@ public class Woman extends Person {
     public Woman(int needCalories) {
         super(needCalories);
     }
+
     public Woman (int needCalories , String color){
         super(needCalories);
         this.color = color;
